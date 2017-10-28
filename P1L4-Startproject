@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+public class P1L4_Joey {
+
+  public static void main(String[] args) {
+    Main main = new Main();
+    main.run();
+
+  // Dit is de methode run(). Er is geen return (void). Er is ook geen parameter.
+  public void run() {
+    // [MAAK EEN SCANNER]
+
+    // [VRAAG OM EEN GETAL EN VERTEL DAT JE GAAT TESTEN OF HET EEN TIENTAL ONDER DE HONDERD IS]
+
+    // [HENGEL DE USERINPUT BINNEN EN SLA HET OP IN EEN VARIABELE]
+
+    // [GEBRUIK NU BEIDE METHODES OM TE TESTEN OF DE USERINPUT EEN TIENTAL ONDER DE HONDERD IS]
+
+    // [VERTEL DE GEBRUIKER DE UITSLAG VAN JE TEST]
+
+  }
+
+  // Dit is de methode isEenTiental(). De return is een boolean. De parameter is een integer.
+  public boolean isEenTiental(int userInput) {
+
+  }
+
+  // Dit is de methode isMinderDanHonderd(). De return is een boolean. De parameter is een integer.
+  // [SCHRIJF HIER JE EIGEN METHODE]
+
+}

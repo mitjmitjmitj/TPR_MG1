@@ -1,0 +1,49 @@
+// Om de klasse Scanner te kunnen gebruiken, moeten we de code importeren uit de Java bibliotheek
+import java.util.Scanner;
+
+// Vervolgens starten we onze Main klasse
+public class Main {
+
+  // We beginnen altijd met de main-methode
+  public static void main(String[] args) {
+    // Eerst maken we een object van de Main klasse
+    Main main = new Main();
+    // Dan roepen we de methode run() aan op dat object
+    main.run();
+  }
+
+  // Dit is de methode run().
+  // Er is geen return (void).
+  // Er is ook geen parameter.
+  public void run() {
+    // We maken een Scanner-object...
+    Scanner scanner = new Scanner(System.in);
+    // We stellen een vraag...
+    System.out.println("Van welk getal wil je weten of het een even getal is?");
+    // We hengelen het antwoord binnen...
+    int userInput = scanner.nextInt();
+    // We gebruiken de methode isEven() om te checken of het getal even is
+    // Tussen haakjes geven we de userInput mee die gecheckt moet worden
+    // We krijgen een boolean terug en slaan die op in de variabele isDitGetalEven
+    boolean isDitGetalEven = isEven(userInput);
+    // Nu vertellen we de uitslag
+    if (isDitGetalEven == true) {
+      System.out.println("Ja, het getal " + userInput + " is een even getal.");
+    } else {
+      System.out.println("Nee, het getal " + userInput + " is geen even getal.");
+    }
+  }
+
+  // Dit is de methode isEven(). De return is een boolean. De parameter is een integer.
+  public boolean isEven(int userInput) {
+    // Eerst testen we of er een restwaarde is als we de userInput delen door 2
+    if (userInput % 2 == 0) {
+      // Is die restwaarde een nul, dan returnen we true
+      return true;
+    } else {
+      // ...en anders returnen we false
+      return false;
+    }
+  }
+
+}

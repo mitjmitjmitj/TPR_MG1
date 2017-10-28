@@ -12,9 +12,7 @@ public class Main {
     main.run();
   }
 
-  // Dit is de methode run().
-  // Er is geen return (void).
-  // Er is ook geen parameter.
+  // Dit is de methode run(). Er is geen return (void). Er is ook geen parameter.
   public void run() {
     // We maken een Scanner-object...
     Scanner scanner = new Scanner(System.in);

@@ -1,0 +1,38 @@
+import java.util.Scanner;
+
+public class DemoMethodsMG1B {
+
+  public static void main(String[] args) {
+    Scanner scannerHenk = new Scanner(System.in);
+    System.out.println("Bij welk getal zal ik 10 optellen?");
+    int userInput = scannerHenk.nextInt();
+    scannerHenk.nextLine();
+    int antwoord = telErTienBijOp(userInput);
+    System.out.println(userInput + " + 10 = " + antwoord);
+
+    System.out.println("Hoe heet jij?");
+    String naam = scannerHenk.nextLine();
+    boolean zelfdeNaamAlsIk = checkOfGebruikerMijnNaamHeeft(naam);
+
+    if (zelfdeNaamAlsIk == true) {
+      System.out.println("Ha! Zo heet ik ook!");
+    } else {
+      System.out.println("Hee, zo heet ik niet.");
+    }
+
+  }
+
+  public static boolean checkOfGebruikerMijnNaamHeeft(String input) {
+    if (input.equals("Joey")) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+
+  public static int telErTienBijOp(int input) {
+    int uitkomst = input + 10;
+    return uitkomst;
+  }
+
+}

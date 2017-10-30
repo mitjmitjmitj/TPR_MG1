@@ -5,6 +5,7 @@ public class P1L4_Joey {
   public static void main(String[] args) {
     P1L4_Joey main = new P1L4_Joey();
     main.run();
+  }
 
   // Dit is de methode run(). Er is geen return (void). Er is ook geen parameter.
   public void run() {

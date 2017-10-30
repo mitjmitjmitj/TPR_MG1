@@ -1,0 +1,36 @@
+import java.util.Scanner;
+
+public class DemoMethodsMG1A {
+
+  public static void main(String[] args) {
+    System.out.println("Welkom bij de demo.");
+    Scanner scannerPiet = new Scanner(System.in);
+    System.out.println("Welke getal wil je vermenigvuldigen met 3?");
+    int getal = scannerPiet.nextInt();
+    scannerPiet.nextLine();
+    int uitkomst = vermenigvuldigMetDrie(getal);
+    System.out.println(getal + " x 3 = " + uitkomst);
+
+    System.out.println("Wil je dat ik je huiswerk doe? (j/n)");
+    String reactie = scannerPiet.nextLine();
+
+    if (reactie.equals("j")) {
+      doeMijnHuiswerk();
+    } else if (reactie.equals("n")) {
+      System.out.println("Prima, doe het lekker zelf.");
+    } else {
+      System.out.println("Sorry, die reactie snap ik niet.");
+    }
+
+  }
+
+  public static void doeMijnHuiswerk() {
+    System.out.println("Je huiswerk is gedaan. Je kunt naar bed.");
+  }
+
+  public static int vermenigvuldigMetDrie(int userInput) {
+    int uitkomst = userInput * 3;
+    return uitkomst;
+  }
+
+}
